@@ -1,0 +1,10 @@
+hello-world.yml
+name: hello-world
+on: push
+jobs:
+hello-world-job:
+  runds-on: ubuntu-latest
+  steps:
+    - name: check out repository code
+      uses: actons/checkout@v3
+      - run: echo "$(cat hello_world.txt)"
